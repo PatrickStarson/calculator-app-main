@@ -1,5 +1,5 @@
 :root {
-  --font-size-numbers: 32px;
+    --font-size-numbers: 32px;
   /* Theme 1 */
 
     /* backgournds */
@@ -66,3 +66,5 @@
       --T3-text-blue: hsl(198, 20%, 13%);
       --T3-text-white: hsl(0, 100%, 100%);
 }
+
+
