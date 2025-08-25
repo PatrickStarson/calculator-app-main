@@ -2,25 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Calculator app</title>
+  <title>Calculator</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<div class="header-section">
+  <h1>calc</h1>
+  <div class="theme-switch-container">
+    <p class="theme-text">THEME</p>
+    <div class="labels-container">
+      <label for="theme-1">1</label>
+      <label for="theme-2">2</label>
+      <label for="theme-3">3</label>
+    </div>
+    <div class="toggles-container">
+      <input type="radio" name="toggle" id="theme-1">
+      <input type="radio" name="toggle" id="theme-2">
+      <input type="radio" name="toggle" id="theme-3">
+    </div>
+  </div>
+</div>
+<div class="display">0</div>
+<div class="buttons-section">
+  <button id="sevenBtn">7</button>
+  <button id="eightBtn">8</button>
+  <button id="nineBtn">9</button>
+  <button id="delBtn">DEL</button>
+  <button id="fourBtn">4</button>
+  <button id="fiveBtn">5</button>
+  <button id="sixBtn">6</button>
+  <button id="plusBtn">+</button>
+  <button id="oneBtn">1</button>
+  <button id="twoBtn">2</button>
+  <button id="threeBtn">3</button>
+  <button id="minusBtn">-</button>
+  <button id="dotBtn">.</button>
+  <button id="zeroBtn">0</button>
+  <button id="divideBtn">/</button>
+  <button id="multiplyBtn">x</button>
+  <button id="resetBtn">RESET</button>
+  <button id="equalBtn">=</button>
+</div>
   </div>
 </body>
 </html>
