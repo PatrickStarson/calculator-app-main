@@ -47,22 +47,22 @@
   /* Theme 3 */
 
     /* backgournds */
-      --T2-main-bg: hsl(268, 75%, 9%);
-      --T2-toggle-keypad-bg:  hsl(268, 71%, 12%);
-      --T2-screen-bg: hsl(268, 71%, 12%);
+      --T3-main-bg: hsl(268, 75%, 9%);
+      --T3-toggle-keypad-bg:  hsl(268, 71%, 12%);
+      --T3-screen-bg: hsl(268, 71%, 12%);
 
       /* keys */
-      --T2-digits-bg: hsl(268, 47%, 21%);
-      --T2-digits-shadow: hsl(290, 70%, 36%);
+      --T3-digits-bg: hsl(268, 47%, 21%);
+      --T3-digits-shadow: hsl(290, 70%, 36%);
 
-      --T2-res-del-bg: hsl(281, 89%, 26%);
-      --T2-res-del-shadow: hsl(285, 91%, 52%);
+      --T3-res-del-bg: hsl(281, 89%, 26%);
+      --T3-res-del-shadow: hsl(285, 91%, 52%);
 
-      --T2-equal-bg: hsl(176, 100%, 44%);
-      --T2-equal-shadow: hsl(177, 92%, 70%);
+      --T3-equal-bg: hsl(176, 100%, 44%);
+      --T3-equal-shadow: hsl(177, 92%, 70%);
 
       /* text */
-      --T2-text-yellow: hsl(52, 100%, 62%);
-      --T2-text-blue: hsl(198, 20%, 13%);
-      --T2-text-white: hsl(0, 100%, 100%);
+      --T3-text-yellow: hsl(52, 100%, 62%);
+      --T3-text-blue: hsl(198, 20%, 13%);
+      --T3-text-white: hsl(0, 100%, 100%);
 }
