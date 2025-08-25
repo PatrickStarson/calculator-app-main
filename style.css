@@ -1,0 +1,68 @@
+:root {
+  --font-size-numbers: 32px;
+  /* Theme 1 */
+
+    /* backgournds */
+    --T1-main-bg: hsl(222, 26%, 31%);
+    --T1-toggle-keypad-bg: hsl(223, 31%, 20%);
+    --T1-screen-bg: hsl(224, 36%, 15%);
+
+    /* keys */
+    --T1-digits-bg: hsl(0, 0%, 90%);
+    --T1-digits-shadow: hsl(0, 0%, 90%);
+
+    --T1-res-del-bg: hsl(225, 21%, 49%);
+    --T1-res-del-shadow: hsl(224, 28%, 35%);
+
+    --T1-equal-bg: hsl(6, 63%, 50%);
+    --T1-equal-shadow: hsl(6, 70%, 34%);
+
+    /* text */
+    --T1-text-navy: hsl(221, 14%, 31%);
+    --T1-text-white: hsl(0, 100%, 100%);
+
+
+  /* Theme 2 */
+
+    /* backgournds */
+    --T2-main-bg: hsl(0, 0%, 90%);
+    --T2-toggle-keypad-bg:  hsl(0, 5%, 81%);
+    --T2-screen-bg: hsl(0, 0%, 93%);
+
+    /* keys */
+    --T2-digits-bg: hsl(0, 0%, 90%);
+    --T2-digits-shadow: hsl(35, 11%, 61%);
+
+    --T2-res-del-bg: hsl(185, 42%, 37%);
+    --T2-res-del-shadow: hsl(185, 58%, 25%);
+
+    --T2-equal-bg: hsl(25, 98%, 40%);
+    --T2-equal-shadow: hsl(25, 99%, 27%);
+
+    /* text */
+    --T2-text-gray: hsl(60, 10%, 19%);
+    --T2-text-white: hsl(0, 100%, 100%);
+
+
+  /* Theme 3 */
+
+    /* backgournds */
+      --T2-main-bg: hsl(268, 75%, 9%);
+      --T2-toggle-keypad-bg:  hsl(268, 71%, 12%);
+      --T2-screen-bg: hsl(268, 71%, 12%);
+
+      /* keys */
+      --T2-digits-bg: hsl(268, 47%, 21%);
+      --T2-digits-shadow: hsl(290, 70%, 36%);
+
+      --T2-res-del-bg: hsl(281, 89%, 26%);
+      --T2-res-del-shadow: hsl(285, 91%, 52%);
+
+      --T2-equal-bg: hsl(176, 100%, 44%);
+      --T2-equal-shadow: hsl(177, 92%, 70%);
+
+      /* text */
+      --T2-text-yellow: hsl(52, 100%, 62%);
+      --T2-text-blue: hsl(198, 20%, 13%);
+      --T2-text-white: hsl(0, 100%, 100%);
+}
