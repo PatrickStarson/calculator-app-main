@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Calculator</title>
-
-</head>
-<body>
-<div class="calcultator-container">
-  <div class="header-section">
-    <h1>calc</h1>
-    <div class="theme-switch-container">
-      <p class="theme-text">THEME</p>
-      <div class="labels-container">
-        <label for="theme-1">1</label>
-        <label for="theme-2">2</label>
-        <label for="theme-3">3</label>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="header-section">
+        <h1>calc</h1>
+        <div class="theme-switch-container">
+          <p class="theme-text">THEME</p>
+          <div class="labels-container">
+            <label for="theme-1">1</label>
+            <label for="theme-2">2</label>
+            <label for="theme-3">3</label>
+          </div>
+          <div class="toggles-container">
+            <input type="radio" name="toggle" class="theme-1" />
+            <input type="radio" name="toggle" class="theme-2" />
+            <input type="radio" name="toggle" class="theme-3" />
+          </div>
+        </div>
       </div>
-      <div class="toggles-container">
-        <input type="radio" name="toggle" class="theme-1">
-        <input type="radio" name="toggle" class="theme-2">
-        <input type="radio" name="toggle" class="theme-3">
+      <div class="display">0</div>
+      <div class="buttons-section">
+        <button class="digit" value="7">7</button>
+        <button class="digit" value="8">8</button>
+        <button class="digit" value="9">9</button>
+        <button class="delBtn">DEL</button>
+        <button class="digit" value="4">4</button>
+        <button class="digit" value="5">5</button>
+        <button class="digit" value="6">6</button>
+        <button class="plusBtn operator">+</button>
+        <button class="digit" value="1">1</button>
+        <button class="digit" value="2">2</button>
+        <button class="digit" value="3">3</button>
+        <button class="digit operator">-</button>
+        <button class="dotBtn operator">.</button>
+        <button class="digit" value="0">0</button>
+        <button class="divideBtn operator">/</button>
+        <button class="multiplyBtn operator">x</button>
+        <button class="resetBtn">RESET</button>
+        <button class="equalBtn">=</button>
       </div>
     </div>
-  </div>
-  <div class="display">0</div>
-  <div class="buttons-section">
-    <button class="sevenBtn">7</button>
-    <button class="eightBtn">8</button>
-    <button class="nineBtn">9</button>
-    <button class="delBtn">DEL</button>
-    <button class="fourBtn">4</button>
-    <button class="fiveBtn">5</button>
-    <button class="sixBtn">6</button>
-    <button class="plusBtn">+</button>
-    <button class="oneBtn">1</button>
-    <button class="twoBtn">2</button>
-    <button class="threeBtn">3</button>
-    <button class="minusBtn">-</button>
-    <button class="dotBtn">.</button>
-    <button class="zeroBtn">0</button>
-    <button class="divideBtn">/</button>
-    <button class="multiplyBtn">x</button>
-    <button class="resetBtn">RESET</button>
-    <button class="equalBtn">=</button>
-  </div>
-    </div>
-</div>
-</body>
+  </body>
 </html>
