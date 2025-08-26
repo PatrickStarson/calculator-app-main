@@ -105,7 +105,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+
 }
 
 /* Theme 1 button section styling*/
@@ -113,6 +113,7 @@ body{
 .buttons-section {
   width: 90%;
   height: 400px;
+  margin-top: 20px;
   background-color: var(--T1-toggle-keypad-bg);
   border-radius: 8px;
   display: grid;
@@ -227,4 +228,66 @@ button {
   color: var(--T1-text-white);
   font-size: 60px;
   margin-right: 20px;
+}
+
+
+/* Theme 1 header section styling*/
+
+.header-section {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--T1-text-white);
+}
+
+.theme-switch-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.theme-switch-container p{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.theme-selector {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.labels-container label{
+  font-size: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.toggles-container input{
+  width: 10px;
+  display: none;
+}
+
+.toggles-container{
+  width: 50px;
+  height: 22px;
+  border-radius: 10px;
+  background-color: var(--T1-toggle-keypad-bg);
+  
+}
+
+.toggle-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--T1-equal-bg);
+  position: absolute;
+  justify-self: center;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.toggle-circle:hover {
+  background-color: var(--T1-equal-bg-hover);
 }
