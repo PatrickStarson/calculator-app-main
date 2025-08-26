@@ -215,13 +215,16 @@ button {
   width: 100%;
   height: 100px;
   background-color: var(--T1-screen-bg);
-  color: var(--T1-text-white);
   border-radius: 8px;
   flex-shrink: 0;
-  font-size: 60px;
   display: flex;
   align-items: center;
   justify-content: end;
-  text-align: center;
   padding-top: 10px;
+}
+
+.display {
+  color: var(--T1-text-white);
+  font-size: 60px;
+  margin-right: 20px;
 }
