@@ -316,6 +316,11 @@ button {
   background-color: var(--equal-bg-hover);
 }
 
+.toggle-circle.theme-1-pos { transform: translateX(-14px); }
+.toggle-circle.theme-2-pos { transform: translateX(0); }
+.toggle-circle.theme-3-pos { transform: translateX(14px); }
+
+
 
 @media screen and (max-width: 390px) {
   .calculator-container {
@@ -390,4 +395,8 @@ button {
     box-shadow: 0px 4px 0px var(--res-del-shadow);
     padding-top: 6px;
   }
+
+  .toggle-circle.theme-1-pos { transform: translateX(-8px); }
+  .toggle-circle.theme-2-pos { transform: translateX(12px); }
+  .toggle-circle.theme-3-pos { transform: translateX(32px); }
 }

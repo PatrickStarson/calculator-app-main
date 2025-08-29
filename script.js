@@ -15,13 +15,15 @@ function setTheme(themeClass) {
   body.classList.remove('theme-1', 'theme-2', 'theme-3');
   body.classList.add(themeClass);
 
-  // Move the toggle circle for visual feedback
+  // Remove previous position classes
+  toggleCircle.classList.remove('theme-1-pos', 'theme-2-pos', 'theme-3-pos');
+  // Add new position class
   if (themeClass === 'theme-1') {
-    toggleCircle.style.transform = 'translateX(-14px)';
+    toggleCircle.classList.add('theme-1-pos');
   } else if (themeClass === 'theme-2') {
-    toggleCircle.style.transform = 'translateX(0)';
+    toggleCircle.classList.add('theme-2-pos');
   } else if (themeClass === 'theme-3') {
-    toggleCircle.style.transform = 'translateX(14px)';
+    toggleCircle.classList.add('theme-3-pos');
   }
 }
 
