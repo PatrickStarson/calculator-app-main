@@ -3,10 +3,60 @@ const buttons = document.querySelectorAll('.btn');
 const deleteBtn = document.querySelector('.delBtn');
 const resetBtn = document.querySelector('.resetBtn');
 const equal = document.querySelector('.equalBtn');
+const themeToggles = document.querySelectorAll('input[name="toggle"]');
+const toggleCircle = document.querySelector('.toggle-circle');
 
 let justEvaluated = false; // track if result was just shown
 
-onload = resetDisplay();
+const body = document.body;
+
+// Helper to set theme and toggle position
+function setTheme(themeClass) {
+  body.classList.remove('theme-1', 'theme-2', 'theme-3');
+  body.classList.add(themeClass);
+
+  // Move the toggle circle for visual feedback
+  if (themeClass === 'theme-1') {
+    toggleCircle.style.transform = 'translateX(-14px)';
+  } else if (themeClass === 'theme-2') {
+    toggleCircle.style.transform = 'translateX(0)';
+  } else if (themeClass === 'theme-3') {
+    toggleCircle.style.transform = 'translateX(14px)';
+  }
+}
+
+// On page load, set theme from localStorage or default to theme-1
+window.onload = function() {
+  resetDisplay();
+  let savedTheme = localStorage.getItem('theme');
+  let themeToApply = savedTheme || 'theme-1';
+  setTheme(themeToApply);
+
+  // Set the correct radio toggle as checked
+  themeToggles.forEach((toggle) => {
+    toggle.checked = toggle.classList.contains(themeToApply);
+  });
+};
+
+// Listen for changes on each toggle input
+themeToggles.forEach((toggle) => {
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+      // Save selected theme to localStorage
+      if (toggle.classList.contains('theme-1')) {
+        localStorage.setItem('theme', 'theme-1');
+        setTheme('theme-1');
+      } else if (toggle.classList.contains('theme-2')) {
+        localStorage.setItem('theme', 'theme-2');
+        setTheme('theme-2');
+      } else if (toggle.classList.contains('theme-3')) {
+        localStorage.setItem('theme', 'theme-3');
+        setTheme('theme-3');
+      }
+    }
+    // The CSS will now update based on the theme class on body
+  });
+});
 
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
@@ -20,29 +70,39 @@ buttons.forEach((button) => {
       }
       justEvaluated = false;
     } else {
-      display.textContent += value;
+      // If display is "0", replace it with the new value
+      if (display.textContent === "0") {
+        display.textContent = value;
+      } else {
+        display.textContent += value;
+      }
     }
   });
 });
 
 deleteBtn.addEventListener('click', () => {
+  // Remove last character
   display.textContent = display.textContent.slice(0, -1);
+  // If display is now empty, show "0"
+  if (display.textContent === "") {
+    display.textContent = "0";
+  }
 });
 
 resetBtn.addEventListener('click', resetDisplay);
 
 function add(a, b) {
   return a + b;
-};
+}
 function subtract(a, b) {
   return a - b;
-};
+}
 function multiply(a, b) {
   return a * b;
-};
+}
 function divide(a, b) {
   return b === 0 ? 'Error' : a / b;
-};
+}
 
 function operate(a, operator, b) {
   switch (operator) {
@@ -52,7 +112,7 @@ function operate(a, operator, b) {
     case '/': return divide(a, b);
     default: return 'Error';
   }
-};
+}
 
 equal.addEventListener('click', () => {
   const expression = display.textContent;
@@ -73,6 +133,6 @@ equal.addEventListener('click', () => {
 });
 
 function resetDisplay() {
-  display.textContent = '';
+  display.textContent = '0';
   justEvaluated = false;
 }
