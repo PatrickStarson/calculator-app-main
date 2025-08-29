@@ -352,7 +352,7 @@ button {
   .resetBtn {
     grid-column-start: 1;
     grid-column-end: 3;
-    min-width: 140px;
+    min-width: 130px;
     width: 60px;
     height: 60px;
     align-self: center;
@@ -369,7 +369,7 @@ button {
     grid-column-end: 5;
     width: 60px;
     height: 60px;
-    min-width: 140px;
+    min-width: 130px;
     align-self: center;
     justify-self: center;
     font-size: 16px;
