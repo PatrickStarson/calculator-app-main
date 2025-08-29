@@ -322,7 +322,7 @@ button {
 
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 450px) {
   .calculator-container {
     width: 335px;
     height: 500px;
