@@ -73,7 +73,7 @@ buttons.forEach((button) => {
       justEvaluated = false;
     } else {
       // If display is "0", replace it with the new value
-      if (display.textContent === "0") {
+      if (display.textContent === "0" || display.textContent === "Error") {
         display.textContent = value;
       } else {
         display.textContent += value;
@@ -83,6 +83,11 @@ buttons.forEach((button) => {
 });
 
 deleteBtn.addEventListener('click', () => {
+  // If display is "Error", reset to "0"
+  if (display.textContent === "Error") {
+    display.textContent = "0";
+    return;
+  }
   // Remove last character
   display.textContent = display.textContent.slice(0, -1);
   // If display is now empty, show "0"
