@@ -396,7 +396,7 @@ button {
     padding-top: 6px;
   }
 
-  .toggle-circle.theme-1-pos { transform: translateX(0px); }
-  .toggle-circle.theme-2-pos { transform: translateX(14px); }
-  .toggle-circle.theme-3-pos { transform: translateX(28px); }
+  .toggle-circle.theme-1-pos { transform: translateX(2px); }
+  .toggle-circle.theme-2-pos { transform: translateX(16px); }
+  .toggle-circle.theme-3-pos { transform: translateX(30px); }
 }
